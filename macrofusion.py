@@ -34,7 +34,7 @@ global session_options_bak
 session_options_bak=[]
    
 APP = 'MacroFusion'
-__VERSION__='0.7.6-beta'
+__VERSION__='0.7.6'
 __LICENSE__='GPL'
 __COPYRIGHT__='Dariusz Duma'
 __WEBSITE__='http://sourceforge.net/p/macrofusion'

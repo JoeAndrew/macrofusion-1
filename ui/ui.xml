@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.16.1 -->
+<!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.0"/>
   <object class="GtkAdjustment" id="adjustment1">
@@ -30,7 +30,7 @@
   <object class="GtkAdjustment" id="adjustment13">
     <property name="lower">-10</property>
     <property name="upper">10</property>
-    <property name="step_increment">1</property>
+    <property name="step_increment">0.10000000000000001</property>
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adjustment14">
@@ -201,6 +201,9 @@
     <property name="can_focus">False</property>
     <signal name="destroy" handler="on_mainwindow_destroy" swapped="no"/>
     <child>
+      <placeholder/>
+    </child>
+    <child>
       <object class="GtkBox" id="vbox1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
@@ -361,8 +364,8 @@
                                           <object class="GtkLabel" id="label10">
                                             <property name="visible">True</property>
                                             <property name="can_focus">False</property>
-                                            <property name="xalign">0</property>
                                             <property name="label" translatable="yes">Exposure (default: 1)</property>
+                                            <property name="xalign">0</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -405,8 +408,13 @@ weight given to well-exposed pixels
 weight given to well-exposed pixels
 						</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="width_chars">6</property>
+                                                <property name="max_width_chars">4</property>
+                                                <property name="shadow_type">none</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
+                                                <property name="input_purpose">number</property>
+                                                <property name="populate_all">True</property>
                                                 <property name="adjustment">adjustment2</property>
                                                 <property name="digits">1</property>
                                               </object>
@@ -427,8 +435,8 @@ weight given to well-exposed pixels
                                           <object class="GtkLabel" id="label11">
                                             <property name="visible">True</property>
                                             <property name="can_focus">False</property>
-                                            <property name="xalign">0</property>
                                             <property name="label" translatable="yes">Contrast (default: 0)</property>
+                                            <property name="xalign">0</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -470,8 +478,11 @@ weight given to pixels in high-contrast neighborhoods
 weight given to pixels in high-contrast neighborhoods
 						</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="width_chars">6</property>
+                                                <property name="max_width_chars">4</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
+                                                <property name="input_purpose">number</property>
                                                 <property name="adjustment">adjustment4</property>
                                                 <property name="digits">1</property>
                                               </object>
@@ -492,8 +503,8 @@ weight given to pixels in high-contrast neighborhoods
                                           <object class="GtkLabel" id="label12">
                                             <property name="visible">True</property>
                                             <property name="can_focus">False</property>
-                                            <property name="xalign">0</property>
                                             <property name="label" translatable="yes">Saturation (default: 0.2)</property>
+                                            <property name="xalign">0</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -535,6 +546,8 @@ weight given to highly-saturated pixels
 weight given to highly-saturated pixels
 						</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="width_chars">6</property>
+                                                <property name="max_width_chars">4</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
                                                 <property name="adjustment">adjustment6</property>
@@ -557,8 +570,8 @@ weight given to highly-saturated pixels
                                           <object class="GtkLabel" id="label13">
                                             <property name="visible">True</property>
                                             <property name="can_focus">False</property>
-                                            <property name="xalign">0</property>
                                             <property name="label" translatable="yes">Mean exposure (default: 0.5)</property>
+                                            <property name="xalign">0</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -579,7 +592,7 @@ weight given to highly-saturated pixels
                                                 <property name="tooltip_text">
 --exposure-optimum=MEAN
 
-center also known as MEAN of Gaussian weighting
+center also known as MEAN of weighting function
 						</property>
                                                 <property name="adjustment">adjustment7</property>
                                                 <property name="draw_value">False</property>
@@ -597,9 +610,11 @@ center also known as MEAN of Gaussian weighting
                                                 <property name="tooltip_text">
 --exposure-optimum=MEAN
 
-center also known as MEAN of Gaussian weighting
+center also known as MEAN of weighting function
 						</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="width_chars">6</property>
+                                                <property name="max_width_chars">4</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
                                                 <property name="adjustment">adjustment8</property>
@@ -622,8 +637,8 @@ center also known as MEAN of Gaussian weighting
                                           <object class="GtkLabel" id="label14">
                                             <property name="visible">True</property>
                                             <property name="can_focus">False</property>
+                                            <property name="label" translatable="yes">Exposure width (deviation) (default: 0.2)</property>
                                             <property name="xalign">0</property>
-                                            <property name="label" translatable="yes">Deviation (default: 0.2)</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -643,7 +658,7 @@ center also known as MEAN of Gaussian weighting
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">False</property>
                                                 <property name="tooltip_text">
---exposure-width=SIGMA
+--exposure-width=WIDTH
 
 standard deviation of Gaussian weighting
 						</property>
@@ -661,11 +676,13 @@ standard deviation of Gaussian weighting
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="tooltip_text">
---exposure-width=SIGMA
+--exposure-sigma=SIGMA
 
 standard deviation of Gaussian weighting
 						</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="width_chars">6</property>
+                                                <property name="max_width_chars">4</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
                                                 <property name="adjustment">adjustment10</property>
@@ -881,6 +898,7 @@ number of blending LEVELS to use
 number of blending LEVELS to use
 					    </property>
                                             <property name="invisible_char">•</property>
+                                            <property name="width_chars">5</property>
                                             <property name="primary_icon_activatable">False</property>
                                             <property name="secondary_icon_activatable">False</property>
                                             <property name="adjustment">adjustment11</property>
@@ -985,6 +1003,7 @@ set window SIZE for local-contrast analysis
 set window SIZE for local-contrast analysis.
                                         </property>
                                             <property name="invisible_char">•</property>
+                                            <property name="width_chars">5</property>
                                             <property name="primary_icon_activatable">False</property>
                                             <property name="secondary_icon_activatable">False</property>
                                             <property name="adjustment">adjustment12</property>
@@ -1068,9 +1087,11 @@ minimum CURVATURE for an edge to qualify
 minimum CURVATURE for an edge to qualify.
                                         </property>
                                             <property name="invisible_char">•</property>
+                                            <property name="width_chars">5</property>
                                             <property name="primary_icon_activatable">False</property>
                                             <property name="secondary_icon_activatable">False</property>
                                             <property name="adjustment">adjustment13</property>
+                                            <property name="digits">1</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -1147,6 +1168,7 @@ Gaussian (LoG) edge detection algorithm. EDGE-SCALE is the
 radius of the Gaussian used in the search for edges.
                                             </property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="width_chars">5</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
                                                 <property name="adjustment">adjustment14</property>
@@ -1199,6 +1221,7 @@ the enhancement step, LCE-FACTOR is the weight
 factor (“strength”).
                                             </property>
                                                     <property name="invisible_char">•</property>
+                                                    <property name="width_chars">5</property>
                                                     <property name="primary_icon_activatable">False</property>
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="adjustment">adjustment15</property>
@@ -1271,6 +1294,7 @@ factor (“strength”).
 LCE-FACTOR is the weight factor (“strength”)
                                             </property>
                                                     <property name="invisible_char">•</property>
+                                                    <property name="width_chars">5</property>
                                                     <property name="primary_icon_activatable">False</property>
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="adjustment">adjustment16</property>
@@ -1532,6 +1556,7 @@ or contrast weighing, where OPERATOR is one of
                                                         <property name="has_tooltip">True</property>
                                                         <property name="tooltip_text" translatable="yes">The larger resolution - the longer it takes to generate preview.</property>
                                                         <property name="invisible_char">•</property>
+                                                        <property name="max_width_chars">7</property>
                                                         <property name="primary_icon_activatable">False</property>
                                                         <property name="secondary_icon_activatable">False</property>
                                                         <property name="adjustment">adjustment17</property>
@@ -1575,6 +1600,7 @@ or contrast weighing, where OPERATOR is one of
                                                         <property name="has_tooltip">True</property>
                                                         <property name="tooltip_text" translatable="yes">The larger resolution - the longer it takes to generate preview.</property>
                                                         <property name="invisible_char">•</property>
+                                                        <property name="max_width_chars">7</property>
                                                         <property name="primary_icon_activatable">False</property>
                                                         <property name="secondary_icon_activatable">False</property>
                                                         <property name="adjustment">adjustment18</property>
@@ -1639,8 +1665,8 @@ or contrast weighing, where OPERATOR is one of
                                             <property name="margin_left">4</property>
                                             <property name="margin_right">4</property>
                                             <property name="margin_top">4</property>
-                                            <property name="xalign">0</property>
                                             <property name="label" translatable="yes">Cache Size:</property>
+                                            <property name="xalign">0</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -1677,6 +1703,7 @@ or contrast weighing, where OPERATOR is one of
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="max_width_chars">7</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
                                                 <property name="adjustment">adjustment19</property>
@@ -1714,8 +1741,8 @@ or contrast weighing, where OPERATOR is one of
                                             <property name="margin_left">4</property>
                                             <property name="margin_right">4</property>
                                             <property name="margin_top">4</property>
-                                            <property name="xalign">0</property>
                                             <property name="label" translatable="yes">Bloc Size: </property>
+                                            <property name="xalign">0</property>
                                           </object>
                                           <packing>
                                             <property name="expand">False</property>
@@ -1752,6 +1779,7 @@ or contrast weighing, where OPERATOR is one of
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="invisible_char">•</property>
+                                                <property name="max_width_chars">7</property>
                                                 <property name="primary_icon_activatable">False</property>
                                                 <property name="secondary_icon_activatable">False</property>
                                                 <property name="adjustment">adjustment20</property>
@@ -1793,8 +1821,8 @@ or contrast weighing, where OPERATOR is one of
                                               <object class="GtkLabel" id="label18">
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">False</property>
-                                                <property name="xalign">0</property>
                                                 <property name="label" translatable="yes">Final image size:</property>
+                                                <property name="xalign">0</property>
                                               </object>
                                               <packing>
                                                 <property name="expand">False</property>
@@ -1846,6 +1874,7 @@ or contrast weighing, where OPERATOR is one of
                                                     <property name="visible">True</property>
                                                     <property name="can_focus">True</property>
                                                     <property name="invisible_char">•</property>
+                                                    <property name="max_width_chars">7</property>
                                                     <property name="primary_icon_activatable">False</property>
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="adjustment">adjustment21</property>
@@ -1887,6 +1916,7 @@ or contrast weighing, where OPERATOR is one of
                                                     <property name="visible">True</property>
                                                     <property name="can_focus">True</property>
                                                     <property name="invisible_char">•</property>
+                                                    <property name="max_width_chars">7</property>
                                                     <property name="primary_icon_activatable">False</property>
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="adjustment">adjustment22</property>
@@ -1928,6 +1958,7 @@ or contrast weighing, where OPERATOR is one of
                                                     <property name="visible">True</property>
                                                     <property name="can_focus">True</property>
                                                     <property name="invisible_char">•</property>
+                                                    <property name="max_width_chars">7</property>
                                                     <property name="primary_icon_activatable">False</property>
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="adjustment">adjustment23</property>
@@ -1969,6 +2000,7 @@ or contrast weighing, where OPERATOR is one of
                                                     <property name="visible">True</property>
                                                     <property name="can_focus">True</property>
                                                     <property name="invisible_char">•</property>
+                                                    <property name="max_width_chars">7</property>
                                                     <property name="primary_icon_activatable">False</property>
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="adjustment">adjustment24</property>
@@ -2058,6 +2090,7 @@ or contrast weighing, where OPERATOR is one of
                                                 <property name="can_focus">True</property>
                                                 <property name="max_length">100</property>
                                                 <property name="width_chars">3</property>
+                                                <property name="max_width_chars">7</property>
                                                 <property name="adjustment">adjustment26</property>
                                                 <property name="climb_rate">1</property>
                                                 <property name="value">85</property>

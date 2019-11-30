@@ -1,6 +1,7 @@
-[unreleased]
+0.7.6
   * Change deprecated --exposure-mu    to --exposure-optimum
   * Change deprecated --exposure-sigma to --exposure-width
+  * Wide value boxes to make values readable.
 
 0.7.5 (30.11.2019)
 

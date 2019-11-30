@@ -5,8 +5,7 @@ This is a fork of [MacroFusion 0.7.4](https://sourceforge.net/projects/macrofusi
 Intentions of this fork:
  - Fix a GTK incompatibility bug. (done)
  - Update `enfuse` options to recent syntax. (done)
- - Allow floating values for some options.
- - Fix some GTk warnings.
+ - Wider value boxes to make values readble. (done)
 
 # Original README
 
