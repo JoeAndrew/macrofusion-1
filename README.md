@@ -6,6 +6,8 @@ Intentions of this fork:
  - Fix a GTK incompatibility bug. (done)
  - Update `enfuse` options to recent syntax. (done)
  - Wider value boxes to make values readble. (done)
+ 
+![screenshot](https://github.com/mviereck/macrofusion/blob/master/images/logoSplash.png)
 
 # Original README
 
