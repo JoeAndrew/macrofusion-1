@@ -34,7 +34,7 @@ global session_options_bak
 session_options_bak=[]
    
 APP = 'MacroFusion'
-__VERSION__='0.7.4'
+__VERSION__='0.7.5'
 __LICENSE__='GPL'
 __COPYRIGHT__='Dariusz Duma'
 __WEBSITE__='http://sourceforge.net/p/macrofusion'
@@ -618,7 +618,7 @@ class Interface:
 
     def pixbuf2Image(self, pb):
         width,height = pb.get_width(),pb.get_height()
-        return Image.fromstring("RGB",(width,height),pb.get_pixels() )
+        return Image.frombytes("RGB",(width,height),pb.get_pixels() )
 
     def put_files_to_the_list(self, fichiers):
         
