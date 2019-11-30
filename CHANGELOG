@@ -1,3 +1,7 @@
+[unreleased]
+  * Change deprecated --exposure-mu    to --exposure-optimum
+  * Change deprecated --exposure-sigma to --exposure-width
+
 0.7.5 (30.11.2019)
 
   * fork by Martin Viereck

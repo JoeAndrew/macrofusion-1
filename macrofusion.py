@@ -34,7 +34,7 @@ global session_options_bak
 session_options_bak=[]
    
 APP = 'MacroFusion'
-__VERSION__='0.7.5'
+__VERSION__='0.7.6-beta'
 __LICENSE__='GPL'
 __COPYRIGHT__='Dariusz Duma'
 __WEBSITE__='http://sourceforge.net/p/macrofusion'
@@ -455,8 +455,8 @@ class Interface:
 
     def get_options(self):
         options=["--exposure-weight=" + str(self.spinbuttonexp.get_value()), 
-                 "--exposure-mu=" + str(self.spinbuttonmu.get_value()), 
-                 "--exposure-sigma=" + str(self.spinbuttonsigma.get_value()),
+                 "--exposure-optimum=" + str(self.spinbuttonmu.get_value()), 
+                 "--exposure-width=" + str(self.spinbuttonsigma.get_value()),
                  "--saturation-weight=" + str(self.spinbuttonsat.get_value()),
                  "--contrast-weight=" + str(self.spinbuttoncont.get_value())]
         if self.check_pyramidelevel.get_active():            

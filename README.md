@@ -1,10 +1,12 @@
-# Fork of Macrofusion
+# Fork of MacroFusion
 
-This is a fork of Macrofusion 0.7.4. Honours go to author Dariusz Duma.
+This is a fork of [MacroFusion 0.7.4](https://sourceforge.net/projects/macrofusion/). Honours go to author Dariusz Duma.
 
 Intentions of this fork:
  - Fix a GTK incompatibility bug. (done)
- - Update `enfuse` options to recent syntax.
+ - Update `enfuse` options to recent syntax. (done)
+ - Allow floating values for some options.
+ - Fix some GTk warnings.
 
 # Original README
 
